@@ -1,0 +1,50 @@
+.contacts {
+  @include section(0, 60px);
+}
+
+.contacts__title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contacts__subtitle {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.contacts__block {
+  width: 100%;
+  padding: 24px 20px;
+  background-color: var(--accent-color);
+  border-radius: 16px;
+}
+
+.contacts__list {
+  @extend %list;
+}
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contacts__link {
+  @extend %link;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px 76px;
+  background-color: var(--secondary-bkg-color);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
