@@ -1,22 +1,50 @@
 .contacts {
   @include section(0, 60px);
+  background-color: var(--bkg-color);
+  @media screen and (min-width: 768px) {
+    @include section (0, 100px);
+  }
 }
 
 .contacts__title {
+  @include title(28px);
   margin-bottom: 8px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    @include title;
+  }
 }
 
 .contacts__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
   margin-bottom: 26px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__block {
   width: 100%;
   padding: 24px 20px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--accent-color);
   border-radius: 16px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 53px 74px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+  }
 }
 
 .contacts__list {
@@ -29,8 +57,22 @@
   margin-right: 8px;
 }
 
+.contacts__text {
+  color: var(--secondary-text-color);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.6;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .contacts__link {
@@ -40,11 +82,24 @@
 }
 
 .contacts__btn {
-  width: 100%;
+  min-width: 240px;
   margin-top: 22px;
   padding: 12px 76px;
   background-color: var(--secondary-bkg-color);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    min-width: 224px;
+    height: 54px;
+    margin-top: 0;
+    padding: 9px 46px;
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-left: auto;
+  }
 }

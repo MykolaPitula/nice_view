@@ -1,4 +1,10 @@
-@mixin section ($pt: 60px, $pb: $pt) {
-    padding-top: $pt;
-    padding-bottom: $pb;
+@mixin section($pt: 60px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin title($fs: 40px) {
+  font-weight: 500;
+  font-size: $fs;
+  line-height: 1.5;
 }

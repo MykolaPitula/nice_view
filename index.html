@@ -10,6 +10,12 @@
     />
     <title>Nice view</title>
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -21,24 +27,27 @@
           <adress>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts__link"
+                <a
+                  class="contacts__link"
                   href="https://goo.gl/maps/FmCMZKK1xnKTFL2k6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >
+                >
                   <svg class="contacts__icon">
                     <use href="./images/icons.svg#map"></use>
                   </svg>
-                  <p>4517 Washington Ave.</p></a
+                  <p class="contacts__text">4517 Washington Ave.</p></a
                 >
               </li>
               <li class="contacts__item">
-                <a class="contacts__link" href="mailto:willie.jennings@example.com"
-                  >
+                <a
+                  class="contacts__link"
+                  href="mailto:willie.jennings@example.com"
+                >
                   <svg class="contacts__icon">
                     <use href="./images/icons.svg#email"></use>
                   </svg>
-                  <p>willie.jennings@example.com</p></a
+                  <p class="contacts__text">willie.jennings@example.com</p></a
                 >
               </li>
               <li class="contacts__item">
@@ -46,12 +55,14 @@
                   <svg class="contacts__icon">
                     <use href="./images/icons.svg#phone"></use>
                   </svg>
-                  <p>(+33)7 00 55 54 79</p></a></li>
+                  <p class="contacts__text">(+33)7 00 55 54 79</p></a
+                >
+              </li>
             </ul>
+          </adress>
           <button class="contacts__btn" type="submit">Contact us</button>
         </div>
       </div>
     </section>
-    </adress>
   </body>
 </html>
